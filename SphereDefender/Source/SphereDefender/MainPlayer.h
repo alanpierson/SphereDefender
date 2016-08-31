@@ -12,10 +12,10 @@ public:
 	AMainPlayer();
 
 	/*INPUTS*/
-	void LookYaw(float val);
-	void LookPitch(float val);
-	void MoveForward(float val);
-	void MoveRight(float val);
+	//void Rotate(float val);
+	void OnRotationInput(FVector Input);
+	void UpDown(float val);
+	void LeftRight(float val);
 
 	/*OVERRIDES*/
 	virtual void BeginPlay() override;
